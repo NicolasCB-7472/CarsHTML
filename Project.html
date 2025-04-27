@@ -10,23 +10,59 @@
 
 <body>
 
-	<table width="100%" height="-1" border="2" cellspacing="0" cellpadding="0" bgcolor="#0099FF">	
-		<tr height="50">
-			<td width=100 align="center"> HOME </td>
-			<td width=100 align="center"> CARS </td>
-			<td width=100 align="center"> ABOUT </td>
-			<td width=100 align="center"> CONTACT</td>	
+	<table width="100%" height="0" border="2" cellspacing="0" cellpadding="0" bgcolor="#0099FF">	
+		<tr width="100%" height="50">
+			<td width="25%" align="center"><h2> HOME </h2></td>
+			<td width="25%" align="center"><h2> CARS </h2></td>
+			<td width="25%" align="center"><h2> ABOUT </h2></td>
+			<td width="25%" align="center"><h2><a href="#"> CONTACT </a></h2></td>	
 		</tr>
 		<tr align="center" height=150 bgcolor="white">
 			<td bgcolor="yellow" colspan="2" width=100> ELEMENTO 1 </td>
 			<td bgcolor="yellow" colspan="2" width=100> ELEMENTO 2</td>
 		</tr>
 		<tr>
-			<td colspan="2" align="center" bgcolor="white">
-			<img src="./IMG/MustangS550.png" width="100%" height="100%">
+			<td align="left" colspan="2" bgcolor="red" height="100%">
+				<img src="./IMG/MustangS550.png" width="100%" height="100%">
 			</td>
-			<td colspan="2" align="center" bgcolor="white">
-				<img src="./IMG/MustangDarkHorse.png" width="100%" height="100%">
+			<td align="left" colspan="2"  bgcolor="blue">
+				<img src="./IMG/MustangDarkHorse.png" width="100%" height="100%">		
+			</td>
+		</tr>
+		<tr width="100%" height="60">
+		<td align="left">&nbsp;&nbsp;&nbsp; S550</td>
+			<td colspan="2" align="center">VS</td>
+			<td align="right"> DARK HORSE&nbsp;&nbsp;&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<table width="100%" border="-1" cellspacing="0" cellpadding="0">
+				<tr align="center">
+					<td align="center">MAKE YOUR VOTE COUNT!</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<input type="radio" name="carvote" value="S550"/>S550
+						<input type="radio" name="carvote" value="DH">Dark Horse
+					</td>
+				</tr>
+				<tr>
+					<td align="center">You can enter your email for follow-up news! </td>
+				</tr>
+				<tr>
+					<td align="center">
+						<form name="mailcontact" method="post" action="send.php">
+							<input type="text" name="email" />
+						</form>
+					</td>
+				</tr>	
+				<tr>
+					<td align="center">
+						<form name="submit" method="post" action="send.php">
+							<input type="submit" name="button" value="Submit"/>
+					</td>
+				</tr>
+			</table>
 			</td>
 		</tr>
 	</table>
